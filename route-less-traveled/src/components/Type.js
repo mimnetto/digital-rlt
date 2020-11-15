@@ -21,6 +21,8 @@ export default class Type extends React.Component {
      }
   render() {
     return (
+      <div>
+      <div>
       <Typist >
         ... Hello ... ?
           <Typist.Delay ms={1200}  />
@@ -38,14 +40,15 @@ export default class Type extends React.Component {
           <Typist.Delay ms={1200}  />
           <br />
           <br />
-            <form onSubmit={this.handleSubmit}>
-              <label>
-                Password:
-                <input type="text" value={this.state.value} className={this.state.visible?'fadeIn':'fadeOut'} onChange={this.handleChange} />
-              </label>
-                <input type="submit" value="Submit" />
-              </form>
-      </Typist>
+          Be a <i>good girl</i> and put in the password.
+          <br />
+          <br />
+            <Typist.Delay ms={5000}  />
+            Password: 
+        </Typist>
+          </div>
+
+          </div>
     );
   }
 }
